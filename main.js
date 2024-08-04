@@ -110,15 +110,39 @@
 // calculateTotal(3,6);
 
 //#RETURN FUNCTION
-function add(a,b){
-  // console.log(a+b);
+// function add(a,b){
+//   // console.log(a+b);
+//   return a+b;
+// }
+// // console.log(add(10,30));
+
+// let result = add(10,30)
+// console.log(result /2);
+// console.log(result * 2)
+
+//#function expretion
+
+// const greet = function(name){
+//   console.log("hello " + name);
+// }
+// greet("abdinour");
+
+//#exercise #4
+// function add(a,b){
+//   return a+b;
+// }
+// let result = add(2,3);
+// console.log(result *2);
+// console.log(result *5);
+// console.log(result *8);
+
+const add = function(a,b){
   return a+b;
 }
-// console.log(add(10,30));
 
-let result = add(10,30)
-console.log(result /2);
-console.log(result * 2)
+let result = add(2,3);
+console.log(result);
+
 
 
 
