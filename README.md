@@ -1,4 +1,4 @@
-# JavaScript Project: [Project Name]
+# JavaScript Learning Project
 
 ## Table of Contents
 
