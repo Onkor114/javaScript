@@ -10,12 +10,10 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
-Welcome to the [Project Name] repository! This project is designed for JavaScript developers who are at the beginner to intermediate level. The aim is to help you learn and practice JavaScript by building a functional and interactive application.
+Welcome to the beginners of javaScript repository! This project is designed for JavaScript developers who are at the beginner to intermediate level. The aim is to help you learn and practice JavaScript by building a functional and interactive application.
 
 ## Features
 
@@ -27,10 +25,8 @@ Welcome to the [Project Name] repository! This project is designed for JavaScrip
 
 This project is built using the following technologies:
 
-- HTML5
-- CSS3
 - JavaScript (ES6+)
-- [Any additional libraries or frameworks, e.g., jQuery, Bootstrap]
+
 
 ## Getting Started
 
