@@ -136,14 +136,113 @@
 // console.log(result *5);
 // console.log(result *8);
 
-const add = function(a,b){
-  return a+b;
+// const add = function(a,b){
+//   return a+b;
+// }
+
+// let result = add(2,3);
+// console.log(result);
+
+// const salaam = (name)=> {
+//   console.log("hello " +name)
+// }
+// salaam("Abdinour")
+
+//Exercise #5
+// const add = (a,b)=> {
+//   return a+b;
+// }
+// let result =add(2,3);
+// console.log(result);
+
+//# SCOPE
+// let globalvariable = ("i am a global variable");
+
+// function showVariable(){
+//   console.log(globalvariable);
+// }
+// console.log(globalvariable)
+// showVariable()
+
+
+// function showVariable(){
+//   let localvariable = ("i am local variable");
+//   console.log(localvariable);
+// }
+// console.log(localvariable)
+// showVariable()
+
+//# BLOCK SCOPE FUNCTION
+// {
+  
+//   let MyName = "Abdinour";
+//   const age = 23;
+
+ 
+//   console.log(MyName)
+
+// }
+
+
+//# arrays
+
+// let names = ["Abdinour", "fuad", "Sonkor", "Ali"] 
+// console.log(names[0])
+
+//exercie #6
+// let colors = ["red", "blue", "green", "grey", "white", "orange"]
+// console.log("befor arrey");
+// console.log(colors);
+
+// colors.push("black");
+
+// console.log("after push");
+// console.log(colors);
+
+// colors.pop();
+// console.log("after pop");
+// console.log(colors);
+
+// colors.unshift("lemon");
+// console.log("after unshift");
+// console.log(colors);
+
+// colors.shift();
+// console.log("after shift");
+// console.log(colors);
+
+// console.log(colors.length);
+
+
+//# Objects
+
+// let person = {
+//   name : "abdinour",
+//   age : 24,
+//   city : "denan"
+// }
+
+// console.log(person.name);
+
+// console.log(person["name"]);
+
+// exercise #8
+
+let car = {
+  make : "toyota",
+  modell : "tesla",
+  year : 2024
 }
 
-let result = add(2,3);
-console.log(result);
+console.log(car);
 
+car.make = "haudai";
 
+console.log(car)
+
+car.user = "Abdinour";
+
+console.log(car)
 
 
 
