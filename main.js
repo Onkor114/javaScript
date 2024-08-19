@@ -228,24 +228,64 @@
 
 // exercise #8
 
-let car = {
-  make : "toyota",
-  modell : "tesla",
-  year : 2024
-}
+// let car = {
+//   make : "toyota",
+//   modell : "tesla",
+//   year : 2024,
 
-console.log(car);
+//   //if you use arrow function
+//   great : function () {
+//     console.log("Hello, How are your Doing" , this.make);
+//   }
+// }
 
-car.make = "haudai";
+// console.log(car);
 
-console.log(car)
+// car.make = "haudai";
 
-car.user = "Abdinour";
+// console.log(car)
 
-console.log(car)
+// car.user = "Abdinour";
 
+// console.log(car)
 
+// car.id = "EV/1095/13";
 
+// console.log(car);
+
+// console.log(car.great());
+
+// let studentsI = ["Abdinour", "Ali", "saynab"]
+// let students = [
+//   {
+//     Name: "Abdinour",
+//     Age: 23,
+//     city: "jigjiga"
+//   },
+
+//   {
+//     Name: "Geedi",
+//     Age: 23,
+//     city: "Mugadisho"
+//   }
+// ]
+
+// console.log(students[0].Name);
+
+let liberary = [
+  {
+    title: "Looma ooyaan",
+    Author: "frunk Fanoon",
+    Year: 1960
+  },
+  {
+    title: "Ismalure",
+    Author: "mark manson",
+    Year: 2021
+  }
+]
+
+console.log(liberary[0] .title)
 
 
 
