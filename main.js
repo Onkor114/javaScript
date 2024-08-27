@@ -272,20 +272,186 @@
 
 // console.log(students[0].Name);
 
-let liberary = [
-  {
-    title: "Looma ooyaan",
-    Author: "frunk Fanoon",
-    Year: 1960
-  },
-  {
-    title: "Ismalure",
-    Author: "mark manson",
-    Year: 2021
-  }
-]
+// let liberary = [
+//   {
+//     title: "Looma ooyaan",
+//     Author: "frunk Fanoon",
+//     Year: 1960
+//   },
+//   {
+//     title: "Ismalure",
+//     Author: "mark manson",
+//     Year: 2021
+//   }
+// ]
 
-console.log(liberary[0] .title)
+// console.log(liberary[0] .title)
+
+// for (let i = 0; i < 5; i++){
+//  console.log(i);
+// }
+
+// for(let i = 1; i <=10; i++){
+//   console.log(i);
+// }
+
+//EXERCISE 11
+
+// for (let i = 1; i <=50; i++){
+//   console.log(i);
+  
+// }
+
+// const classStudents =[ "abdinour", "Ali" ,"Ahmed", "muhsin"]
+
+//   console.log(classStudents.length)
+// for (let i = 0; i < classStudents.length; i++){
 
 
+//     console.log(classStudents[i])
+
+// }
+
+
+// const fruat = ["Apple", "banana", "lemon", "chery"]
+
+// for (let i =0; i < fruat.length; i++){
+//   console.log(fruat[i])
+// }
+
+// let i =0;
+// while ( i <5){
+//   console.log("iteration number:" +i)
+//   i++;
+// }
+
+// let i = 5;
+// while ( i>0){
+//   console.log("Iteration Number: " +i)
+//   i--;
+// }
+
+// let i = 0;
+// do {
+// console.log("iteration number: " +i)
+// i++;
+// }while(i < 5);
+
+// let password;
+// do {
+//   password = prompt("Enter your password");
+// }
+// while(password !== "12345");
+// console.log("welcome user");
+
+// let user;
+// do{
+//   user = prompt("enter number greater then 10");
+// }while(user == "11,12,.....");
+
+// console.log("great job")
+// let number;
+
+// do {
+//     number = parseInt(prompt("Please enter a number greater than 10:"));
+// } while (isNaN(number) || number <= 10);
+
+// alert("Thank you! You entered: " + number);
+
+// const students = ["Abdinour", "Ali", "Ahmed"];
+
+// for (student of students){
+//   console.log(student);
+// }
+
+// const language = "JavaScript"
+
+// for (let l of language){
+//   console.log(l);
+// }
+
+// const student = {name: "abdinour", ID: "CA12", age: 25};
+
+// for(key in student){
+//   console.log(student[key]);
+// }
+
+// const people = [
+//   {Name: "Abdinour", Age: 25, Citty:"jigjiga"},
+//   {Name: "Ahmed", Age: 45, Citty:"godey"},
+//   {Name: "Ali", Age: 25, Citty:"Dhegahbur"}
+// ]
+// for( const person in people){
+//   console.log(people[person]);
+// }
+
+
+
+//###CONDITIONAL STATEMENTS LESSON/////////////////////////////////////////////////////////////////////
+//if -statement
+// let age = 18;
+
+// if(age >= 18){
+//   console.log("you are adult")
+// }
+
+
+//# if -else statement///////////////////
+
+// let age = 10;
+// if (age >= 18){
+//   console.log("you are adult");
+// } else {
+//   console.log("you are a minor");
+// }
+
+
+//##Exercise #16
+
+// let score = 40;
+// if(score >= 50){
+//   console.log("you passed");
+// }else{
+//   console.log("you failed");
+// }
+
+
+// let age = 15;
+// if(age < 13){
+//   console.log("you are a child");
+// } else if (age < 20){
+//   console.log("your are a teeneger");
+// }else{
+//   console.log("your are an adult");
+// }
+
+//##Exercise #17
+// let tempreture = 20;
+// if (tempreture <0){
+//   console.log("it is verry cold");
+// }else if (tempreture >0 && tempreture <15){
+//   console.log("is cold");
+// }else if (tempreture >15 && tempreture < 25){
+//   console.log("is warm");
+// }else{
+//   console.log("is hot")
+// }
+
+
+///////////////////## Ternary operator/////////////////////
+
+// let age = 18;
+
+// const message = age >=18 ? "Your are an adult" : "your are a minor";
+// console.log(message);
+ 
+// let me = age >= 18 && "Your are an adult";
+// console.log(me);
+
+//##Exercise #18
+
+let grade = 55;
+
+const me = grade >= 60 ? "you are passed" : "your are failed";
+console.log(me)
 
