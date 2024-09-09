@@ -72,7 +72,7 @@
 // console.log(!isSunny);
 // console.log(!isWeekend)
 
-// String OPERATORS
+/////////////////////////////////////////// String OPERATORS
 
 // let firstName = " Abdinour";
 // let lastName = " muktar";
@@ -91,7 +91,7 @@
 
 
 
-//##Function declaration
+///////////////////////////////////////////////##Function declaration
 
 // function great(name){
 //   console.log("Hello " + name);
@@ -450,8 +450,139 @@
 
 //##Exercise #18
 
-let grade = 55;
+// let grade = 55;
 
-const me = grade >= 60 ? "you are passed" : "your are failed";
-console.log(me)
+// const me = grade >= 60 ? "you are passed" : "your are failed";
+// console.log(me)
 
+
+///////////////## Higher-Order methonds
+///////////ForEach
+
+// const fruits = ["apple", "banana", "chery"];
+
+// fruits.forEach ((fruit)=>{
+//   console.log("i like " + fruit);
+// }
+// )
+
+// console.log("-------------")
+
+// fruits.forEach (function(fruit){
+//   console.log("i like " + fruit);
+// }
+// )
+
+
+//////////////////////tijabo/
+
+
+/////////////////////////////#Exercise #19
+
+// const number = [1, 2, 3, 4, 5,];
+
+// number.forEach(function(number){
+//   console.log(number);
+
+// })
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const newNumber = numbers.map((number)=> number *2)
+//   console.log(newNumber)
+
+/////////////////////////////////#exercise #20/////////////////////////amazing
+
+// const fruit = ["apple", "banana", "chery"]
+
+// const newFruits = fruit.map((fruit)=> fruit.length)
+
+// console.log(newFruits)
+
+
+////////////////////////////////////////filter method: is used to filter arrey
+
+// const num = [1, 2, 3, 4, 5, 6];
+
+// const evenNumber = num.filter((number)=> number % 2 === 0)
+// console.log(evenNumber)
+
+// const scores = [40, 60, 50, 70, 80, 90];
+
+// const pass = scores.filter((score) => score >=60);
+// console.log(pass);
+
+// const numbers = [1,2,3,4];
+// const sum = numbers.reduce((total, num)=> total + num ,0);
+// console.log(sum)
+
+//////////////////////////////////// exercise #21
+
+// const numbers = [1,2,3,4,5];
+// const product = numbers.reduce((products, num)=> products * num,1);
+// console.log(product);
+
+
+////////////////////////////////ES6 BASICS
+
+// const name = "Abdinour";
+// const city = "Jigjiga";
+// const message = `hello ${name} welcome to ${city}`
+// console.log(message);
+
+
+
+/////////////////////////////////Arrey Distructure///////////
+
+// const fruits = ["banana", "chery", "apple"];
+
+// const [first, chery, apple] = fruits;
+
+// console.log(first);
+// console.log(apple);
+
+
+////////////////////object distructure//////////////
+
+// const person =  { Name: "Abdinour", Age: 25, city: "jigjiga" }
+// const {Name, Age, city} = person;
+
+// console.log(Name);
+// console.log(Age);
+// console.log(city);
+
+///////////////////////////EXERCISE #23
+
+// const car = {Make: "toyota", model: "corola", Year: 2020, }
+
+// const {Make, model} = car;
+
+// console.log(Make);
+// console.log(model);
+
+////////////////////Default prametres
+
+// function greet  (name= "guest"){
+//   console.log(`Hello ${name}`)
+// }
+
+// greet("Abdinour");
+
+// function calculateArea(width, height){
+//   console.log (`Area: ` + width * height);
+// }
+// calculateArea(5 , 8);
+
+
+////////////////////////////// spread operators
+
+// const numbers = [1,2,3];
+
+// const allNumbers =[...numbers , 4,5,6,7];
+
+// console.log(allNumbers);
+
+function sum (numbers){
+  return numbers.reduce((total, numbers) => total + num,0)
+}
+console.log(sum(20,30,50))
