@@ -582,7 +582,54 @@
 
 // console.log(allNumbers);
 
-function sum (numbers){
-  return numbers.reduce((total, numbers) => total + num,0)
+
+////////////////////////////////////// rest operators
+
+// function sum (...numbers){
+//   return numbers.reduce((total, num) => total + num,0);
+// }
+// console.log(sum(20,30,50,100))
+
+/////////////////////////////exercise #25
+
+// const number = [1,2,3];
+// const moreNumbers = [...number, 4,5,6];
+
+// console.log(moreNumbers);
+
+// function all (...product){
+//   return product.reduce((total , num) => total * num,1);
+
+// }
+// console.log(all(3,2));
+
+
+///////////////////////////////////////Asynchronous////////////////////////////////////////
+
+
+//////////////synchronous
+
+// function fetChUserDatasync(){
+//   alert("Fetching user data"); // blocks the data until the user chlivk "OK"
+//   return{ id: 1, name: "Abdiniur"};
+// }
+
+// console.log("starting fetching user data...");
+// const user = fetChUserDatasync(); //this blocks the rest of the code
+// console.log("user data", user);
+// console.log("This message is blocked untill user data is fetched.");
+
+//////////////Asynchronous
+function getUserData(callback){
+  setTimeout(()=>{
+    const user = {id: 1, name: "John Smith" }
+    callback(user);
+  }, 3000);
 }
-console.log(sum(20,30,50))
+
+console.log("starting to fetch user data");
+
+getUserData(function(user){
+  console.log(user)
+});
+console.log("This message shows up imediately");
