@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Styles</title>
+  <style>
+    #myElement {
+      background-color: lightblue;
+      color: black;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+<div id="myElement">Change my Style</div>
+<button onclick="changeStyle()">background-color</button>
+<button onclick="changeStyles()">borderRadius</button>
+<button onclick="changeStyler()">color</button>
+<button onclick="changeStylers()">fontSize</button>
+
+<script>
+  function changeStyle() {
+    const element = document.getElementById('myElement');
+    
+    // Changing styles
+    element.style.backgroundColor = 'yellow';
+  }
+  function changeStyles() {
+    const element = document.getElementById('myElement');
+    
+    // Changing styles
+    element.style.borderRadius = '15px';
+  }
+  function changeStyler() {
+    const element = document.getElementById('myElement');
+    
+    // Changing styles
+    element.style.color = 'blue';
+  }
+  
+</script>
+
+
+    
+    
+
+</body>
+</html>

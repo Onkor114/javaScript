@@ -620,17 +620,164 @@
 // console.log("This message is blocked untill user data is fetched.");
 
 //////////////Asynchronous
-function getUserData(callback){
-  setTimeout(()=>{
-    const user = {id: 1, name: "John Smith" }
-    callback(user);
-  }, 3000);
+// function getUserData(callback){
+//   setTimeout(()=>{
+//     const user = {id: 1, name: "John Smith" }
+//     callback(user);
+//   }, 3000);
+// }
+
+// console.log("starting to fetch user data");
+
+// getUserData(function(user){
+//   console.log(user)
+// });
+// console.log("This message shows up imediately");
+
+
+/////////////////////////promises
+// function fetchUserData(){
+
+//   return new Promise((resolve, reject)=>{
+
+//        setTimeout(()=>{
+
+//          const success = true;
+
+//           if(success){
+//            resolve({ id: 100, name: "john Smith"});
+//         }else {
+//            reject("Failed to Fetch user data");
+//          }
+//       }, 3000);
+//   })
+// }
+
+// fetchUserData()
+//     .then (data => console.log("user data: ", data))
+//     .catch(error => console.log(err));
+
+/////////////////////async/awaits
+// async function displayUserData() {
+//   const user = await fetchUserData();
+//   console.log(user)
+  
+// }
+// displayUserData();
+
+// //try  catch ///if it is success try and if it is error catch
+// async function displayUserData() {
+//   try{
+//     //success status
+//     const user = await fetchUserData();
+//   console.log(user)
+//   }catch (err){
+//     //error
+//     console.log(err)
+//   }
+  
+  
+// }
+// displayUserData();
+
+
+
+////////////////// jSON
+
+// const user = {
+//   id: 1,
+//   name: "Alice",
+//   citty: "jigjiga"
+// }
+// console.log(user)
+
+// const jsonString = JSON.stringify(user);
+
+// console.log(jsonString);
+
+// const parseData = JSON.parse(jsonString);
+
+// console.log(parseData);
+
+// async function fetchData() {
+//   console.log("start fetching the data");
+//   const response = await fetch('data.json');
+//   console.log("response: ", response)
+// }
+
+// fetchData();
+
+
+///////////////UNDERESTANDING CALLBACK
+
+// function great (name){
+//   console.log("hello, ", name);
+
+// }
+
+// function processUserData(user){
+//   const name = prompt("enter your name");
+
+//   user(name);
+// }
+
+// processUserData(great);
+
+
+///////////////more on call back
+
+// function operate (a, b, callback){
+//   return callback(a,b)
+// }
+
+// function add(a,b){
+//   return a+b;
+// }
+
+// function subtract(a,b){
+//   return a-b;
+// }
+// function multiplication(a,b){
+//   return a*b;
+// }
+// function diviton(a,b){
+//   return a/b;
+// }
+
+// console.log("addition: " , operate(2,3 , add));
+// console.log("subtract: " , operate(20,10 , subtract));
+// console.log("multiplication: " , operate(20,10 , multiplication));
+// console.log("diviton: " , operate(20,10 , diviton));
+
+
+//////////////////////////////////////////////////////Making HTTP Requests 
+
+// async function fetchData() {
+  
+//     try{
+//       console.log("starting fetching data");
+
+//       //get methon
+//       const response = await fetch('')
+//       console.log(response);
+      
+//     }catch(error){
+
+//     }
+// }
+// fetchData()
+
+////////////////////////////////////////DOM
+const hear = document.getElementById('header');
+
+const blog = document.getElementsByClassName('blogs')
+
+console.log(header);
+console.log(blogs)
+
+function changeContent(){
+    header.textContent = "welcome to my website"
 }
-
-console.log("starting to fetch user data");
-
-getUserData(function(user){
-  console.log(user)
-});
-console.log("This message shows up imediately");
-
+function changeElement(){
+    blogs.innerHTML = `hello Worlds`
+}
