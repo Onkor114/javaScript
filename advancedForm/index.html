@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced DOM events</title>
+    <style>
+
+        .valid {
+            border: 2px solid green;
+        }
+
+        .invalid {
+            border: 2px solid red;
+        }
+
+        input {
+            outline: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registrationForm">
+
+        <label for="username">UserName</label>
+        <input type="text" name="username" id="username"> <br>
+
+        <label for="email"> your Email</label>
+        <input type="email" name="email" id="email"> <br>
+
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"> <br>
+
+        <label for="confirmPassword">confirmPassword</label>
+        <input type="password" name="confirmPassword" id="confirmPassword"> <br>
+
+        <button type="submit">Register</button>
+
+        <p id="error" style="color: red;"></p>
+        <p id="success" style="color: green;"></p>
+
+    </form>
+
+    <script src="advanced.js"></script>
+    
+</body>
+</html>
